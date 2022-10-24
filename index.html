@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>PIE Chart</title>
+</head>
+<body>
+    <div class="main_div">
+        <div class="center_div">
+        <h2>Pakistan Top 5 States With Highest Corona Virus Cases</h2>
+        <div class="pie-chart "> </div>
+        <p>
+            <span style="color: #ee5253;">AJK :===: 44,317</span><br>
+            <span style="color: #f28e2c;">Balochistan :===: 35,998</span><br>
+            <span style="color: #0abde3;">GB :===: 12,059</span><br>
+            <span style="color: #ee5253;">Islamabad : ===: 139,420</span><br>
+            <span style="color: #10ac84;">KPK :===: 224,277</span><br>
+        </p>
+        <!-- Punjab 522,197 -->
+        <h3>Pakistan Corona Virus Cases Till Now</h3>
+    </div>
+</div>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: algerian;
+    font-style: italic;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center_div{
+    width: calc(100vw - 40vw);
+    height: calc(100vh - 30vh);
+    position: relative;
+    border: 1px solid #000;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.34),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.pie-chart{
+    background: radial-gradient(circle closest-side, transparent 100%, #000, #fff 0),
+    conic-gradient( from 180deg,
+    #ee5253 0,
+    #ee5253 35%,
+    #ff9f43 0,
+    #ff9f43 60%,
+    #f368e0 0,
+    #f368e0 75%,
+    #0abde3 0,
+    #0abde3 89%,
+    #10ac84 0,
+    #10ac84 100%    
+    );
+    min-width: 300px;
+    min-height: 450px;
+}
+.center_div h1{
+    padding: 20px 0 20px 20px;
+}
+.center_div p{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.1rem;
+    text-align: right;
+}
+.center_div span::after{
+    content: "";
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    font-weight: 700;
+    background: currentColor;
+    margin: 0 0.5rem;
+}
+.center_div h3{
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    color: gray;
+}
+</style>
+</body>
+</html>
